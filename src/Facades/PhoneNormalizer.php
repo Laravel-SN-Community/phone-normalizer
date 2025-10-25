@@ -8,6 +8,6 @@ class PhoneNormalizer extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'phonenormalizer';
+        return 'phone.normalizer';
     }
 }

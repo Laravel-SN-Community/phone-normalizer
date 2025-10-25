@@ -9,13 +9,7 @@ class PhoneNormalizerServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../../config/phonenormalizer.php', 'phonenormalizer'
-        );
-
-        $this->app->singleton('phonenormalizer', function ($app) {
-            return new PhoneNormalizerManager;
-        });
+        $this->app->bind('phone.normilizer', PhoneNormalizerManager::class);
     }
 
     public function boot()
