@@ -13,7 +13,7 @@ class PhoneNormalizerServiceProvider extends ServiceProvider
             __DIR__.'/../../config/phonenormalizer.php', 'phonenormalizer'
         );
 
-        $this->app->singleton('phone.normalizer', function ($app) {
+        $this->app->singleton('phonenormalizer', function ($app) {
             return new PhoneNormalizerManager;
         });
     }
