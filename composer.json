@@ -54,13 +54,13 @@
         "illuminate/database": "^11.0||^12.0"
     },
     "extra": {
-    "laravel": {
-        "providers": [
-            "Laravelsn\\PhoneNormalizer\\PhoneNormalizerServiceProvider"
-        ],
-        "aliases": {
-            "PhoneNormalizer": "Laravelsn\\PhoneNormalizer\\Facades\\PhoneNormalizer"
+        "laravel": {
+            "providers": [
+                "Laravelsn\\PhoneNormalizer\\Providers\\PhoneNormalizerServiceProvider"
+            ],
+            "aliases": {
+                "PhoneNormalizer": "Laravelsn\\PhoneNormalizer\\Facades\\PhoneNormalizer"
+            }
         }
     }
-}
 }
