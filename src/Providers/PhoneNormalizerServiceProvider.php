@@ -14,7 +14,7 @@ class PhoneNormalizerServiceProvider extends ServiceProvider
             'phonenormalizer'
         );
 
-        $this->app->singleton('phone.normilizer', function ($app) {
+        $this->app->singleton('phone.normalizer', function ($app) {
             return new PhoneNormalizerManager($app);
         });
     }
