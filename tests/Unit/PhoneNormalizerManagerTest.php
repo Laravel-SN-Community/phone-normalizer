@@ -16,6 +16,12 @@ it('normalizes senegalese phone number that already includes the country code', 
     expect($result)->toBe('+221784852812');
 });
 
+it('normalizes senegalese phone number that already includes the country code and not spaces', function () {
+    $result = Phone::normalize('221784852812');
+
+    expect($result)->toBe('+221784852812');
+});
+
 it('accepts multiple lengths for the same country', function () {
     config()->set('phonenormalizer.countries.SN.length', [8, 9]);
 
